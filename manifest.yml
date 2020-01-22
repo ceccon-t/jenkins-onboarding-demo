@@ -1,0 +1,10 @@
+---
+applications:
+- name: lxbr-jenkins-onboarding-demo
+  instances: 1
+  routes:
+    - route: lxbr-jenkins-onboarding-demo.internal.cfapps.sap.hana.ondemand.com
+  path: target/lxbr-jenkins-onboarding-demo-0.0.1-SNAPSHOT.jar
+  memory: 1G
+  buildpacks:
+    - sap_java_buildpack
